@@ -186,7 +186,6 @@ const HomeScreen = ({ navigation }) => {
       {/* ===
       ===
       ===
-      ===
       === */}
     </View>
   );
