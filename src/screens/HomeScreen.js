@@ -16,7 +16,6 @@ import OrderCard from "../components/OrderCard";
 import EmptyList from "../components/EmptyList";
 import { Context } from "../Context/AmzContext";
 import { SwipeListView } from "react-native-swipe-list-view";
-import { Permissions, Notifications } from "expo";
 
 const HomeScreen = ({ navigation }) => {
   const { deleteOrder, getOrder, state, getUser } = useContext(Context);
@@ -26,39 +25,6 @@ const HomeScreen = ({ navigation }) => {
   const [showSellerContact, setShowSellerContact] = useState("");
   const [showStatus, setShowStatus] = useState("");
   const [date, setDate] = useState("");
-
-  registerForPushNotificationsAsync = async () => {
-    if (Constants.isDevice) {
-      const { status: existingStatus } = await Permissions.getAsync(
-        Permissions.NOTIFICATIONS
-      );
-      let finalStatus = existingStatus;
-      if (existingStatus !== "granted") {
-        const { status } = await Permissions.askAsync(
-          Permissions.NOTIFICATIONS
-        );
-        finalStatus = status;
-      }
-      if (finalStatus !== "granted") {
-        alert("Failed to get push token for push notification!");
-        return;
-      }
-      const token = await Notifications.getExpoPushTokenAsync();
-      console.log(token);
-      this.setState({ expoPushToken: token });
-    } else {
-      alert("Must use physical device for Push Notifications");
-    }
-
-    if (Platform.OS === "android") {
-      Notifications.createChannelAndroidAsync("default", {
-        name: "default",
-        sound: true,
-        priority: "max",
-        vibrate: [0, 250, 250, 250],
-      });
-    }
-  };
 
   useEffect(() => {
     const Listener = navigation.addListener("didFocus", () => {
