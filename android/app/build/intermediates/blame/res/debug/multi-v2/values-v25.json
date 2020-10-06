@@ -4,7 +4,7 @@
             "outputFile": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/21f28c1ce2c800bacc40f5f590d499f0/res/values-v25/values-v25.xml",
+                    "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/values-v25/values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

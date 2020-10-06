@@ -69,6 +69,7 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="catalyst_logbox_background">#ffffffff</color>
     <color name="catalyst_redbox_background">#eecc0000</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
@@ -142,6 +143,7 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
+    <color name="white">#FFF</color>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -406,7 +408,7 @@
     <item name="accessibility_label" type="id"/>
     <item name="accessibility_role" type="id"/>
     <item name="accessibility_state" type="id"/>
-    <item name="accessibility_states" type="id"/>
+    <item name="accessibility_value" type="id"/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
@@ -502,6 +504,7 @@
     <string name="app_name">AmzRevs</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="button_description" translatable="false">Button</string>
     <string name="catalyst_change_bundle_location" project="catalyst" translatable="false">Change Bundle Location</string>
     <string name="catalyst_copy_button" project="catalyst" translatable="false">Copy\n</string>
     <string name="catalyst_debug" project="catalyst" translatable="false">Debug</string>
@@ -551,8 +554,17 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_web_client_id" translatable="false">365740238845-p7jkdj67q0hibk38noa8nqi2org9qpi0.apps.googleusercontent.com</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="firebase_database_url" translatable="false">https://amzrevs-e7a78.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">365740238845</string>
+    <string name="gcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="google_api_key" translatable="false">AIzaSyC3WEG4dH_l87oKD-LEkPcmRvAi4j6JyXU</string>
+    <string name="google_app_id" translatable="false">1:365740238845:android:f02b13753e5912cf349b94</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC3WEG4dH_l87oKD-LEkPcmRvAi4j6JyXU</string>
+    <string name="google_storage_bucket" translatable="false">amzrevs-e7a78.appspot.com</string>
     <string name="header_description" translatable="false">Heading</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="image_description" translatable="false">Image</string>
@@ -568,6 +580,7 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="progressbar_description" translatable="false">Progress Bar</string>
+    <string name="project_id" translatable="false">amzrevs-e7a78</string>
     <string name="radiogroup_description" translatable="false">Radio Group</string>
     <string name="rn_tab_description" translatable="false">Tab</string>
     <string name="scrollbar_description" translatable="false">Scroll Bar</string>
@@ -590,6 +603,10 @@
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
     <style name="Animation.AppCompat.Tooltip" parent="Base.Animation.AppCompat.Tooltip"/>
+    <style name="Animation.Catalyst.LogBox" parent="@android:style/Animation">
+    <item name="android:windowEnterAnimation">@anim/catalyst_push_up_in</item>
+    <item name="android:windowExitAnimation">@anim/catalyst_push_up_out</item>
+  </style>
     <style name="Animation.Catalyst.RedBox" parent="@android:style/Animation">
     <item name="android:windowEnterAnimation">@anim/catalyst_push_up_in</item>
     <item name="android:windowExitAnimation">@anim/catalyst_push_up_out</item>
@@ -2531,6 +2548,15 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.Catalyst"/>
+    <style name="Theme.Catalyst.LogBox">
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:windowTranslucentNavigation">false</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowAnimationStyle">@style/Animation.Catalyst.LogBox</item>
+    <item name="android:inAnimation">@android:anim/fade_in</item>
+    <item name="android:outAnimation">@android:anim/fade_out</item>
+    <item name="android:textColor">@android:color/white</item>
+  </style>
     <style name="Theme.Catalyst.RedBox">
     <item name="android:windowBackground">@color/catalyst_redbox_background</item>
     <item name="android:windowAnimationStyle">@style/Animation.Catalyst.RedBox</item>

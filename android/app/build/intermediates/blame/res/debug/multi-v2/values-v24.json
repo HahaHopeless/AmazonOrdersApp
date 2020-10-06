@@ -4,17 +4,7 @@
             "outputFile": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/21f28c1ce2c800bacc40f5f590d499f0/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/af3faacb88dde8cf3e8e07df3cecf05f/res/values-v24/values-v24.xml",
+                    "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/fbcf802ac1644378ea66cc321398d17f/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -28,6 +18,16 @@
                         "startOffsets": "347,413,474,540",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "408,469,535,602"
+                    }
+                },
+                {
+                    "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
                     }
                 }
             ]
