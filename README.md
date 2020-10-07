@@ -6,20 +6,20 @@ Feel free to clone this app, modify it or use parts of it. Doesnt matter if you 
 ## Errors and their fixes:
 These are all the errors I encountered while developing this application. The errors you get might be different depending on the version of the packages you are using.
 
-### React Navigation Dependencies:
+#### React Navigation Dependencies:
 expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
 npm install react-navigation-stack @react-native-community/masked-view
 
-### Native Base Roboto Medium Fix:
+#### Native Base Roboto Medium Fix:
 Font.loadAsync({
    Roboto: require("native-base/Fonts/Roboto.ttf"),
    Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
  });
 
-### Native Base Fontisto error fix: 
+#### Native Base Fontisto error fix: 
 npm i --save-exact native-base@2.13.8
 
-### Move from Expo to Bare workflow (to get all files like build.gradle and more for android and iOS):
+#### Move from Expo to Bare workflow (to get all files like build.gradle and more for android and iOS):
 expo eject
 NOTE: Also, make sure that JAVA_HOME and ANDROID_HOME environment variables are set correctly.
 
