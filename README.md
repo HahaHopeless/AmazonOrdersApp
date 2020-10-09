@@ -44,3 +44,6 @@ Delete react-native-gradient from node_modules and remove it from packages.json.
 4. Make sure it's "react-native-push-notification": "^3.1.9" in packages.json and no other version.
 
 5. Make sure to replace the keyword AppID or AndroidAppID with your own app package name in “AndroidManifest.xml”.
+
+## NOOB Lessons I Learned
+1. Dont have a console.log everywhere in the code. It REALLY affects the performance.
