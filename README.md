@@ -47,3 +47,6 @@ Delete react-native-gradient from node_modules and remove it from packages.json.
 
 ## NOOB Lessons I Learned
 1. Dont have a console.log everywhere in the code. It REALLY affects the performance.
+
+### Plans for the future
+I plan to make a web scraper that will take a link as input and gather all the relevant information about the product. In short, the add new item form will be automatically filled out.
