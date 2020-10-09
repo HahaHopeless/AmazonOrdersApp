@@ -7,6 +7,7 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
   Modal,
+  RefreshControl,
 } from "react-native";
 import { Container } from "native-base";
 import { MaterialIcons, Feather } from "@expo/vector-icons";
@@ -18,13 +19,14 @@ import { Context } from "../Context/AmzContext";
 import { SwipeListView } from "react-native-swipe-list-view";
 
 const HomeScreen = ({ navigation }) => {
-  const { deleteOrder, getOrder, state, getUser } = useContext(Context);
+  const { deleteOrder, getOrder, state } = useContext(Context);
   const [modalOpen, setModalOpen] = useState(false);
   const [showOrderNumber, setShowOrderNumber] = useState(0);
   const [showSellerName, setShowSellerName] = useState("");
   const [showSellerContact, setShowSellerContact] = useState("");
   const [showStatus, setShowStatus] = useState("");
   const [date, setDate] = useState("");
+  const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
     const Listener = navigation.addListener("didFocus", () => {
@@ -54,6 +56,7 @@ const HomeScreen = ({ navigation }) => {
         <SwipeListView
           data={state}
           keyExtractor={(item) => item.orderNumber}
+          refreshControl={<RefreshControl refreshing={refresh} onRefresh={getOrder} />}
           ListEmptyComponent={<EmptyList />}
           renderItem={({ item }) => (
             <TouchableOpacity
@@ -104,13 +107,8 @@ const HomeScreen = ({ navigation }) => {
           leftOpenValue={75}
           rightOpenValue={-75}
         />
-      </Container>
+        </Container>
       <BtnAdd gotoScreen="AddItem" navigation={navigation} />
-      {/* ===
-      ===
-      ===
-      ===
-      === */}
       <Modal
         animationType="fade"
         transparent={true}
@@ -149,10 +147,6 @@ const HomeScreen = ({ navigation }) => {
           </View>
         </TouchableWithoutFeedback>
       </Modal>
-      {/* ===
-      ===
-      ===
-      === */}
     </View>
   );
 };

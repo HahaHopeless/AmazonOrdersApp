@@ -365,9 +365,9 @@ MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/mohsinkamal/.gradle/
 	android:label
 		ADDED from /Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/AndroidManifest.xml:37:7-39
 	android:roundIcon
-		ADDED from /Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/AndroidManifest.xml:39:7-52
+		ADDED from /Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/AndroidManifest.xml:39:7-44
 	android:icon
-		ADDED from /Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/AndroidManifest.xml:38:7-41
+		ADDED from /Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/AndroidManifest.xml:38:7-39
 	android:allowBackup
 		ADDED from /Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/AndroidManifest.xml:40:7-34
 	android:theme

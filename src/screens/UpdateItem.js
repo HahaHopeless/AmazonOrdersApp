@@ -6,7 +6,7 @@ import HeaderSimple from "../components/HeaderSimple";
 import { View, StyleSheet, Text } from "react-native";
 const UpdateItem = ({ navigation }) => {
   return (
-    <Content>
+    <View>
       <HeaderSimple navigation={navigation} title="Update Status" />
       <View style={styles.form}>
         <RadioButton title="Ordered" status={true} />
@@ -47,7 +47,7 @@ const UpdateItem = ({ navigation }) => {
           <Text style={styles.text}>Cancel</Text>
         </Button>
       </View>
-    </Content>
+    </View>
   );
 };
 

@@ -12,11 +12,13 @@ import { Form, Item, Input, Button } from "native-base";
 import { MaterialIcons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { Context } from "../Context/AmzContext";
+import Spinner from "react-native-loading-spinner-overlay";
 
 const LoginScreen = ({ navigation }) => {
   const { signIn, state, getUser } = useContext(Context);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [spinnerState, setSpinnerState] = useState(false);
 
   // console.log(state);
 
@@ -33,6 +35,13 @@ const LoginScreen = ({ navigation }) => {
         colors={["#fdfbfb", "#c3cfe2"]}
       >
         <View style={styles.container}>
+          <Spinner
+            visible={spinnerState}
+            textContent={"Logging in..."}
+            textStyle={{ color: "#FFF" }}
+            animation="fade"
+            overlayColor="rgba(0, 0, 0, 0.4)"
+          />
           <Image
             source={require("../../assets/amzLogoBlack.png")}
             style={{
@@ -95,10 +104,13 @@ const LoginScreen = ({ navigation }) => {
             <Button
               style={styles.loginButton}
               onPress={() => {
+
+                setSpinnerState(true);
                 signIn(email, password, () => {
                   Keyboard.dismiss();
                   getUser();
                   navigation.navigate("HomeScreen");
+                  setSpinnerState(false);
                 });
               }}
             >
@@ -115,9 +127,10 @@ const LoginScreen = ({ navigation }) => {
           >
             <Text
               style={{
-                fontSize: 16,
+                fontSize: 18,
                 textDecorationLine: "underline",
                 fontWeight: "bold",
+                alignSelf: 'center'
               }}
             >
               Create One

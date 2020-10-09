@@ -272,12 +272,12 @@
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/07ae4153b907aa922bd158dcb0c15599/res/layout/design_navigation_menu.xml"
     },
     {
-        "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/anim_btn_radio_to_off_mtrl_dot_group_animation.xml.flat",
-        "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/anim/btn_radio_to_off_mtrl_dot_group_animation.xml"
-    },
-    {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/drawable-mdpi-v4/abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/anim_btn_radio_to_off_mtrl_dot_group_animation.xml.flat",
+        "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/anim/btn_radio_to_off_mtrl_dot_group_animation.xml"
     },
     {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable_design_fab_background.xml.flat",
@@ -620,6 +620,10 @@
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/07ae4153b907aa922bd158dcb0c15599/res/color/mtrl_btn_ripple_color.xml"
     },
     {
+        "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_cart_icon.png.flat",
+        "source": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/res/mipmap-hdpi/cart_icon.png"
+    },
+    {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/0178d66d2f3629207b2f28986251bc9d/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
     },
@@ -852,6 +856,10 @@
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/9c3ca65396a084eebdbc339d9ec16cde/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
+        "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_cart_icon.png.flat",
+        "source": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/res/mipmap-xhdpi/cart_icon.png"
+    },
+    {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_focused.xml.flat",
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/9c3ca65396a084eebdbc339d9ec16cde/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
@@ -916,12 +924,12 @@
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable_navigation_empty_icon.xml.flat",
-        "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/07ae4153b907aa922bd158dcb0c15599/res/drawable/navigation_empty_icon.xml"
-    },
-    {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable_navigation_empty_icon.xml.flat",
+        "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/07ae4153b907aa922bd158dcb0c15599/res/drawable/navigation_empty_icon.xml"
     },
     {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
@@ -1332,6 +1340,10 @@
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_cart_icon.png.flat",
+        "source": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/res/mipmap-xxxhdpi/cart_icon.png"
+    },
+    {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
@@ -1362,6 +1374,10 @@
     {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_cart_icon.png.flat",
+        "source": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/res/mipmap-mdpi/cart_icon.png"
     },
     {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/layout_abc_screen_toolbar.xml.flat",
@@ -1570,6 +1586,10 @@
     {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/Users/mohsinkamal/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/6bee5d4f1b9a34886ba29485ab430162/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_cart_icon.png.flat",
+        "source": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/src/main/res/mipmap-xxhdpi/cart_icon.png"
     },
     {
         "merged": "/Users/mohsinkamal/Desktop/Projects/AmzRevs/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
